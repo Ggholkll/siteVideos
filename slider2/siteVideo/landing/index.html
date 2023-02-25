@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/e1a33f0f5e.js" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bootstrap.min.css-senza-bug.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styleblock.css">
+    
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e1a33f0f5e.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link rel="stylesheet" href="bootstrap.min.css-senza-bug.css"> -->
+  
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="jquery.aptbox.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/bc57b8e82f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="mpp.css" />
+    <link rel="stylesheet" type="text/css" href="tooltip.css" />
+
+    <script src="../js/jquery-3.2.1.min.js"></script> 
+    <script src="../js/jquery.aptbox.min.js"></script> 
+    <script src="../js/new.js"></script> 
+    <script src="../return-img.js"></script>
+
+    <script>
+      $(document).ready(function ($) {
+        var settings = {
+          sourcePath: "",
+          muted: true,
+          useControls: false,
+          breakPointArr: [
+            { width: 0, column: 1, gutter: 0 },
+            { width: 480, column: 1, gutter: 0 },
+            { width: 500, column: 2, gutter: 0 },
+            { width: 700, column: 3, gutter: 10 },
+            { width: 1100, column: 3, gutter: 10 },
+            { width: 1600, column: 4, gutter: 10 },
+          ],
+          useShare: true,
+          facebookAppId: "",
+          playbackMethod: "hover",
+          // playbackTrigger: ".mpp-inner",
+          playbackTrigger: ".mpp-inner",
+          linkTrigger: ".mpp-link-icon",
+          lightboxTrigger: ".mpp-lightbox-icon",
+        };
+
+        var mppjq = jQuery;
+        mppjq(".wrap").apmpp(settings);
+        mppjq(".wrap2").apmpp(settings);
+        mppjq(".wrap3").apmpp(settings); 
+        mppjq(".wrap4").apmpp(settings);
+      });
+      // Loading The Video List
+      $(document).ready(function($){
+       
+      })
+    </script>
+    <style>
+      .card1:hover{
+        position: relative;
+        z-index: 999;
+      }
+
+      .card1:hover .backtt{
+        display: flex !important;
+      }
+
+      progress {
+        background-color: red;
+        margin: 0;
+      }
+
+      .contt{ 
+        display: none;
+        height: 0;
+      }
+
+      #gossHistory{
+        position:relative;
+        display:flex;
+        flex-wrap:wrap;
+        margin-left:30px;
+        margin-right:30px;
+        margin-top:25px;
+      }
+
+      .modal-header{
+        background-color: white;
+      }
+      
+      #historySection ,#completedSection{
+        padding: 20px 0 !important;
+      }
+
+      h1{
+        margin: 5px 0 !important;
+      }
+
+      #HomeScreen{
+        padding-bottom: 0 !important;
+        padding-top: 10px !important;
+      }
+
+      .mpp-inner {
+        position: relative;
+        height: 100%;
+      }
+      
+      .slick-slide .card .back {
+        position: absolute;
+        padding: 15px 0;
+        width: 100%;
+        display: none !important;
+      }
+
+      .slick-slide:hover .card .back {
+        display: flex !important;
+        height: 100px;
+      }
+
+      .slick-slide img{
+        z-index: 10 !important;
+      }
+
+      .mpp-contr-btn{
+        z-index: 8 !important;
+      }
+
+      .slick-slide:hover .mpp-media{
+        z-index: 12 !important;
+      }
+
+      .slick-slide:hover .mpp-media video{
+        z-index: 25 !important;
+      }
+
+      .slick-slide:hover .mpp-contr-btn{
+        z-index: 30 !important;
+      }
+
+      .slick-slide:hover {
+        z-index: 99999 !important;
+      }
+      .slick-slide:hover .contt{
+        bottom: -77px;
+      }
+      .slick-slide:hover .item.closeprog{
+        position: relative; 
+        top: 60px;
+        z-index: 9999999;
+      }
+      .complea:hover{
+        padding-bottom: 120px;
+      }
+
+      .pupo.slick-slide:hover .card .back{
+        height: 0 !important;
+        display: none !important;
+      }
+
+      .homeSlider{
+        margin-bottom: 60px;
+      }
+    </style>
+<!-- CSS only 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+-->
+</head>
+
+<body>
+  <!-- Buttons Container -->
+
+  <div class="parent row">
+    <!-- Buttons 0 -->
+   
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item">
+	  <svg xmlns="http://www.w3.org/2000/svg"  class="fux"  height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+        <canvas  class="cnvax"   id="canvasId"></canvas>
+      </div>
+ <div class="item">
+        <progress id='top-progress-bar' style="width: 17rem;" min='0' max='100' value='0'>0% played</progress>
+      </div>
+      
+    </div>
+    <!-- Buttons 1 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item ">
+        <canvas style="width: 15rem; margin-bottom: 1rem;" id="canvasId1"></canvas>
+      </div>
+
+
+  </div>
+
+
+
+  
+  <!-- Buttons Container -->
+  <div class="parent row mt-2">
+    <!-- Buttons 0 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem">
+      <div class="item ">
+        <div id="watched">
+         <span class="status"></span>
+		 <span style="padding:5px"></span>
+         <span class="statusCount"></span>
+        </div>
+      </div>
+      <div class="item">
+        <button   id="PlayButton" style="width: 17rem;" class="mybutton  border-gradient border-gradient-purple" data-toggle="modal"
+          data-target="#homeVideo" data-backdrop="static" data-keyboard="false" onclick="playPauseVideo(); addvidss()"><i
+            id="PlayButtonIcon" class="fas fa-play"></i> &nbsp;<span class="traxer">Play Video</span> </button> 
+      </div>
+      
+    </div>
+
+
+  </div>
+  <!-- Home Video 0 Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo" autoplay controls class="mpp-video" preload="metadata" playsinline="" controlslist="nofullscreen nodownload noremoteplayback"  muted="" data-theme="actions" >  
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video 1 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo1" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel1">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen1' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen1();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid1()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo1" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video 2 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg columns" id="homeVideo2" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel2">
+    <div class="modal-dialog modal-lg" role="document"> 
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen2' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen2();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid2()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo2" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.webm" type="video/webm">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.ogv" type="video/ogg">
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="wrap" class="wrap wraphome mpp-dot mpp-skin-sirius-trans mpp-controls-tr mpp-no-grid">
+        
+        
+    </div>
+  <div class="parent row">
+    <!-- Buttons 0 -->
+   
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="fux"  height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+        <canvas  class="cnvax"   id="canvasId"></canvas>
+      </div> 
+ <div class="item">
+        <progress id='top-progress-bar' style="width: 17rem;" min='0' max='100' value='0'>0% played</progress>
+      </div>
+      
+    </div>
+    <!-- Buttons 1 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item ">
+        <canvas style="width: 15rem; margin-bottom: 1rem;" id="canvasId1"></canvas>
+      </div>
+
+
+  </div>
+
+
+
+  
+  <!-- Buttons Container -->
+  <div class="parent row mt-2">
+    <!-- Buttons 0 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem">
+      <div class="item ">
+        <div id="watched">
+         <span class="status"></span>
+     <span style="padding:5px"></span>
+         <span class="statusCount"></span>
+        </div>
+      </div>
+      <div class="item">
+        <button   id="PlayButton" style="width: 17rem;" class="mybutton  border-gradient border-gradient-purple" data-toggle="modal"
+          data-target="#homeVideo" data-backdrop="static" data-keyboard="false" onclick="playPauseVideo(); addvidss()"><i
+            id="PlayButtonIcon" class="fas fa-play"></i> &nbsp;<span class="traxer">Play Video</span> </button> 
+      </div>
+      
+    </div>
+
+
+  </div>
+  <!-- Home Video 0 Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo" autoplay controls class="mpp-video" preload="metadata" playsinline="" controlslist="nofullscreen nodownload noremoteplayback"  muted="" data-theme="comics" >   
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video 1 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo1" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel1">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen1' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen1();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid1()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo1" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video 2 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg columns" id="homeVideo2" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel2">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen2' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen2();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid2()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo2" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.webm" type="video/webm">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.ogv" type="video/ogg">
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="wrap" class="wrap2 wraphome mpp-dot mpp-skin-sirius-trans  mpp-controls-tr mpp-no-grid"> 
+            
+        
+    </div>
+    <div class="parent row">
+    <!-- Buttons 0 -->
+   
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="fux"  height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+        <canvas  class="cnvax"   id="canvasId"></canvas>
+      </div>
+ <div class="item">
+        <progress id='top-progress-bar' style="width: 17rem;" min='0' max='100' value='0'>0% played</progress>
+      </div>
+      
+    </div>
+    <!-- Buttons 1 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item ">
+        <canvas style="width: 15rem; margin-bottom: 1rem;" id="canvasId1"></canvas>
+      </div>
+
+
+  </div>
+
+
+
+  
+  <!-- Buttons Container -->
+  <div class="parent row mt-2">
+    <!-- Buttons 0 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem">
+      <div class="item ">
+        <div id="watched">
+         <span class="status"></span>
+     <span style="padding:5px"></span>
+         <span class="statusCount"></span>
+        </div>
+      </div>
+      <div class="item">
+        <button   id="PlayButton" style="width: 17rem;" class="mybutton  border-gradient border-gradient-purple" data-toggle="modal"
+          data-target="#homeVideo" data-backdrop="static" data-keyboard="false" onclick="playPauseVideo(); addvidss()"><i
+            id="PlayButtonIcon" class="fas fa-play"></i> &nbsp;<span class="traxer">Play Video</span> </button> 
+      </div>
+      
+    </div>
+
+
+  </div>
+  <!-- Home Video 0 Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo" autoplay controls class="mpp-video" preload="metadata" playsinline="" controlslist="nofullscreen nodownload noremoteplayback"  muted="" data-theme="catastrophic" >  
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video 1 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo1" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel1">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen1' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen1();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid1()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo1" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video 2 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg columns" id="homeVideo2" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel2">
+    <div class="modal-dialog modal-lg" role="document"> 
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen2' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen2();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid2()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo2" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.webm" type="video/webm">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.ogv" type="video/ogg">
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="wrap" class="wrap3 wraphome mpp-dot mpp-skin-sirius-trans mpp-controls-tr mpp-no-grid">
+          
+        
+    </div>
+  <div class="parent row">
+    <!-- Buttons 0 -->
+   
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="fux"  height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+        <canvas  class="cnvax"   id="canvasId"></canvas>
+      </div>
+ <div class="item">
+        <progress id='top-progress-bar' style="width: 17rem;" min='0' max='100' value='0'>0% played</progress>
+      </div>
+      
+    </div>
+    <!-- Buttons 1 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem;">
+      <div class="item ">
+        <canvas style="width: 15rem; margin-bottom: 1rem;" id="canvasId1"></canvas>
+      </div>
+
+
+  </div>
+
+
+
+  
+  <!-- Buttons Container -->
+  <div class="parent row mt-2">
+    <!-- Buttons 0 -->
+    <div class="bs-example col-md-3 pt-3" style="padding-left: 1rem; margin-top: 1rem">
+      <div class="item ">
+        <div id="watched">
+         <span class="status"></span>
+     <span style="padding:5px"></span>
+         <span class="statusCount"></span>
+        </div>
+      </div>
+      <div class="item">
+        <button   id="PlayButton" style="width: 17rem;" class="mybutton  border-gradient border-gradient-purple" data-toggle="modal"
+          data-target="#homeVideo" data-backdrop="static" data-keyboard="false" onclick="playPauseVideo(); addvidss()"><i
+            id="PlayButtonIcon" class="fas fa-play"></i> &nbsp;<span class="traxer">Play Video</span> </button> 
+      </div>
+      
+    </div>
+
+
+  </div>
+  <!-- Home Video 0 Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo" autoplay controls class="mpp-video" preload="metadata" playsinline="" controlslist="nofullscreen nodownload noremoteplayback"  muted="" data-theme="adventure" > 
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video 1 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg" id="homeVideo1" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel1">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen1' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen1();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid1()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo1" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video 2 Modal -->
+  <!-- Home Video Modal -->
+  <div class="modal fade bd-example-modal-lg columns" id="homeVideo2" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel2">
+    <div class="modal-dialog modal-lg" role="document"> 
+      <div class="modal-content">
+        <div class="modal-header p-0">
+          <button type="button" class="close" id='btnFullScreen2' title='toggle full screen' accesskey="T"
+            onclick='toggleFullScreen2();' style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i
+              class="fas fa-expand"></i></button>
+          <button type="button" class="close" data-dismiss="modal" onclick="pauseVid2()"
+            style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">X</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video id="gossVideo2" class="embed-responsive-item" controls disablepictureinpicture
+            controlslist="nodownload" crossorigin="anonymous">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.webm" type="video/webm">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.ogv" type="video/ogg">
+          </video>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="wrap" class="wrap4 wraphome mpp-dot mpp-skin-sirius-trans mpp-controls-tr mpp-no-grid">
+  
+        
+    </div>
+
+   <script src="VideoForLifeJs.js"></script> 
+  <script src="VideoForLifeJs1.js"></script>  
+  <script src="VideoForLifeJs2.js"></script>  
+
+  <svg class="hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <symbol viewBox="0 0 512 512" id="svg-link">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                fill="#ffffff" stroke="none">
+                <path d="M675 5107 c-154 -41 -273 -155 -327 -316 l-23 -66 -3 -2125 c-2
+                -1425 1 -2147 8 -2192 21 -136 76 -240 167 -314 78 -64 149 -87 263 -88 167
+                -2 107 -33 1100 575 327 201 1069 655 1649 1009 1171 716 1167 713 1236 854
+                20 39 41 99 47 133 31 169 -65 361 -234 471 -35 22 -666 383 -1403 802 -737
+                420 -1439 819 -1560 888 -121 69 -302 171 -402 228 -100 57 -210 113 -245 125
+                -77 26 -204 33 -273 16z m138 -441 c53 -22 3501 -1987 3521 -2006 18 -18 18
+                -19 -6 -40 -26 -22 -3443 -2116 -3510 -2151 -21 -10 -40 -19 -43 -19 -3 0 -5
+                952 -5 2115 0 1163 2 2115 5 2115 3 0 20 -6 38 -14z"/>
+                </g>
+          </symbol>
+
+            <symbol viewBox="0 0 512 512" id="svg-check">
+              <g>
+                  <path d="M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704
+                  c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704
+                  C78.477,17.894,78.477,18.586,78.049,19.015z"/>
+              </g>
+            </symbol>
+          <symbol viewBox="0 0 512 512" id="svg-share">
+                      <path fill="currentColor" d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path>
+
+            </symbol>
+          <symbol viewBox="0 0 512 512" id="svg-zoom">
+
+    <g><g xmlns="http://www.w3.org/2000/svg" fill="#4caf50">
+      <path d="m437.332031 192h-405.332031c-17.664062 0-32 14.335938-32 32v21.332031c0 17.664063 14.335938 32 32 32h405.332031c17.664063 0 32-14.335937 32-32v-21.332031c0-17.664062-14.335937-32-32-32zm0 0" fill="#ffffff" data-original="#4caf50" style="" class=""/>
+      <path d="m192 32v405.332031c0 17.664063 14.335938 32 32 32h21.332031c17.664063 0 32-14.335937 32-32v-405.332031c0-17.664062-14.335937-32-32-32h-21.332031c-17.664062 0-32 14.335938-32 32zm0 0" fill="#ffffff" data-original="#4caf50" style="" class=""/></g></g>
+
+
+            </symbol>
+    <symbol viewBox="0 0 512 512" id="svg-delete">
+
+    <g><g xmlns="http://www.w3.org/2000/svg" fill="#4caf50">
+      <path d="m437.332031 192h-405.332031c-17.664062 0-32 14.335938-32 32v21.332031c0 17.664063 14.335938 32 32 32h405.332031c17.664063 0 32-14.335937 32-32v-21.332031c0-17.664062-14.335937-32-32-32zm0 0" fill="#ffffff" data-original="#4caf50" style="" class=""/>
+
+
+            </symbol>
+        </svg>
+    
+    <div>
+      
+      <div id="wrap" class=" wraphome mpp-dot mpp-skin-sirius-trans mpp-controls-tr mpp-no-grid">
+        <div style="z-index: 11;" class="flickfeed video-list-slider homeSlider homeSliders1 "> 
+          
+        </div>
+  
+        
+    </div>
+    </section>
+      <div class="videoContainer">
+            <div>
+            <button id="closeButton">X</button>
+            </div>
+            <video id="videoPlayer" controls="controls" width="100%" height="100%">
+                <source src="" type="video/mp4" />
+            </video>
+        </div>
+        <div class="first">
+        <div class="modal fade bd-example-modal-m" id="homeVideo" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <button id="btnTrigger" style="display: none;" data-target="#homeVideo" data-toggle="modal"></button>
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header p-0">
+              <button type="button" class="close" id="btnFullScreen" title="toggle full screen" accesskey="T" onclick="toggleFullScreen();" style="margin: 0rem 0rem 0rem 0rem; padding: 0.4rem;"><i class="fas fa-expand" aria-hidden="true"></i></button>
+              <button type="button" class="close closeexit" data-dismiss="modal" onclick="pauseVid()" style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.4 19.45 4.55 17.6l5.6-5.6-5.6-5.6L6.4 4.55l5.6 5.6 5.6-5.6 1.85 1.85-5.6 5.6 5.6 5.6-1.85 1.85-5.6-5.6Z" fill="black"/></svg></button>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video id="gossVideo-1" autoplay="" controls="" class="mpp-video" preload="metadata" playsinline="" controlslist="nofullscreen nodownload noremoteplayback" > 
+              </video>
+            </div>
+        </div>
+
+        </div>
+      </div>
+        <div class="alertMsg" id="alertMsg">
+        <p style="margin:0">Video Added</p></div>
+</div>
+<div class="second">
+<div class="modal fade bd-example-modal-lg " id="history" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <button id="btnTrigger" style="display: none;" data-target="#history" data-toggle="modal"></button>
+        <div class="modal-dialog modal-xlg" role="document">
+          <div class="modal-content">
+        <div class="modal-header p-0">       
+              <button type="button" class="close"  data-dismiss="modal" style="margin: 0rem 0.2rem 0rem 0rem;padding: 0.4rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.4 19.45 4.55 17.6l5.6-5.6-5.6-5.6L6.4 4.55l5.6 5.6 5.6-5.6 1.85 1.85-5.6 5.6 5.6 5.6-1.85 1.85-5.6-5.6Z" fill="black"/></svg>
+              </button>
+        </div>
+            <div class="modal-header1 p-0">
+              <h1 style="text-align: center;">
+                Easter, keep looking:
+              </h1>
+            </div>
+            <div class="embed-responsive1">
+              <div id="gossHistory">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal1">
+        <div>
+            <h1>Are You Sure You Want To Delete This Video ?</h1>
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <button class="button" id="onRemove" onclick="onRemove(tagElement, tagId)" style="margin-right:10px">Yes</button>
+              <button  class="button" onclick="cancel()">Cancel</button>
+            </div>
+        </div>
+</div>
+<div class="toast1">
+  <div style="padding: 20px 35px 20px 25px;"> 
+        <div class="toast-content">
+          <i class="fas fa-solid fa-check check"></i>
+      
+          <div class="message">
+            <span class="text text-1">Removed Successfuly</span>
+            <span class="text text-2">Your changes has been Saved</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close1"></i>
+      
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress"></div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+      <img  style="width:344px; height:200px" src="" id="modalImage"/>
+      <div id="modalDivTitle" class="text text-3"></div>
+      <button onclick="undoRemoval(this, removedVideoId)" class="button" style="width:344px; margin:2px">
+        Cancel Removal
+      </button>
+  </div>
+</div>
+
+
+  <script src="../js/slick-custom.min.js"></script>  
+  <script src="script.js"></script> 
+</body>
+
+</html>
